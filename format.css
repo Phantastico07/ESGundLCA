@@ -61,11 +61,9 @@
       padding: 2rem 1rem;
     }
     body a:link {
-      color: #2c5282;        
+      color: #2b6cb0;        
     }
-    a:visited {
-      color: purple;       
-    }
+
 
     /* Media Query für Smartphones */
     @media (max-width: 600px) {
