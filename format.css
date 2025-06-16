@@ -60,7 +60,7 @@
       text-align: center;
       padding: 2rem 1rem;
     }
-    a:link {
+    body a:link {
       color: #2c5282;        
     }
     a:visited {
