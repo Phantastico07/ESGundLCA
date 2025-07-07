@@ -54,7 +54,7 @@ function auswerten() {
     return;
   }
 
-  ergebnis.style.color = punkte === 3 ? "green" : "darkorange";
-  ergebnis.textContent = `Du hast ${punkte} von 3 Punkten erreicht.`;
+  ergebnis.style.color = punkte === 10 ? "green" : "darkorange";
+  ergebnis.textContent = `Du hast ${punkte}0% der Punkte erreicht.`;
 }
 
