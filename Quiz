@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wie nachhaltig ist Nachhaltigkeit?</title>
+  <link rel="stylesheet" href="format.css">
+  </head>
+<body>
+<header>
+  <h1>Wie misst man Nachhaltigkeit?</h1>
+  <p>State-of-the-Art ESG & LCA – verständlich & messbar</p>
+  <a href="#projekt">Unser Report</a>
+</header>
+
+  <header>
+    <h1>Quiz: ESG, LCA & ESRS</h1>
+    <p>Teste dein Wissen zu den wichtigsten Nachhaltigkeitsthemen!</p>
+  </header>
+
+  <section>
+    <form id="quizForm">
+      <div class="quiz-block">
+        <h2>1. Wofür steht ESG?</h2>
+        <div class="antworten">
+          <label><input type="radio" name="frage1" value="A"> Energie, Sicherheit, Gesundheit</label>
+          <label><input type="radio" name="frage1" value="B"> Environmental, Social, Governance</label>
+          <label><input type="radio" name="frage1" value="C"> Entwicklung, Strategie, Gewinn</label>
+        </div>
+      </div>
+
+      <div class="quiz-block">
+        <h2>2. Was ist das Ziel einer Lebenszyklusanalyse (LCA)?</h2>
+        <div class="antworten">
+          <label><input type="radio" name="frage2" value="A"> Die ökonomische Rentabilität zu bewerten</label>
+          <label><input type="radio" name="frage2" value="B"> Den Energieverbrauch eines Produkts zu messen</label>
+          <label><input type="radio" name="frage2" value="C"> Die Umweltwirkungen über den gesamten Lebenszyklus zu analysieren</label>
+        </div>
+      </div>
+
+      <div class="quiz-block">
+        <h2>3. Was beschreibt die ESRS?</h2>
+        <div class="antworten">
+          <label><input type="radio" name="frage3" value="A"> Europäische Standards für Nachhaltigkeitsberichterstattung</label>
+          <label><input type="radio" name="frage3" value="B"> Ein Bewertungssystem für Recyclingprodukte</label>
+          <label><input type="radio" name="frage3" value="C"> Die Richtlinien zur Steuervereinfachung in Europa</label>
+        </div>
+      </div>
+
+      <button type="button" onclick="auswerten()">Auswerten</button>
+      <div id="auswertung"></div>
+    </form>
+  </section>
+
+  <script>
+    function auswerten() {
+      let punkte = 0;
+      const ergebnis = document.getElementById("auswertung");
+
+      const antwort1 = document.querySelector('input[name="frage1"]:checked');
+      const antwort2 = document.querySelector('input[name="frage2"]:checked');
+      const antwort3 = document.querySelector('input[name="frage3"]:checked');
+
+      if (!antwort1 || !antwort2 || !antwort3) {
+        ergebnis.textContent = "Bitte beantworte alle Fragen.";
+        ergebnis.style.color = "orange";
+        return;
+      }
+
+      if (antwort1.value === "B") punkte++;
+      if (antwort2.value === "C") punkte++;
+      if (antwort3.value === "A") punkte++;
+
+      ergebnis.style.color = punkte === 3 ? "green" : "darkorange";
+      ergebnis.textContent = `Du hast ${punkte} von 3 Punkten erreicht.`;
+    }
+  </script>
+
+ <footer>
+    <h2>Vielen Dank!</h2>
+    <p>Jannik Bachofer, Philipp Rabe und Philip Stolarczyk</p>
+   <section class="columns">
+   <div class="column">
+     <img src="JB_frei.png" style="max-width: 25%; height: auto;"> </img>
+   </br>
+     <a href="mailto:jannik.bachofer@tha.de">jannik.bachofer@tha.de</a>
+   </div>
+   <div class="column">
+     <img src="PR_frei.png" style="max-width: 30%; height: auto;"> </img>
+     </br>
+     <a href="mailto:philipp.rabe@tha.de">philipp.rabe@tha.de</a>
+   </div>
+   <div class="column">
+     <img src="PS_frei.png" style="max-width: 25%; height: auto;"> </img>
+     </br>
+     <a href="mailto:philip.stolarczyk@tha.de">philip.stolarczyk@tha.de</a>
+   </div>
+   </section>
+  </footer>
+</body>
+</html>
