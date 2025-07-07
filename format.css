@@ -70,6 +70,7 @@
     }
     .button-block{
         margin-top: 4rem;
+        display: flex;
     }
     button {
       display: block;
