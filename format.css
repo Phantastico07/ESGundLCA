@@ -55,7 +55,9 @@
       font-size: 2rem;
       margin-right: 0.5rem;
     }
-    .auswertung{
+    .auswertung {
+        display: flex;
+        margin: 0 auto;
         text-align: center;
     }
     footer {
@@ -78,7 +80,6 @@
       text-decoration: none;
       border-radius: 5px;
       font-size: 1rem;
-      align: center;
     }
     /* Media Query für Smartphones */
     @media (max-width: 600px) {
