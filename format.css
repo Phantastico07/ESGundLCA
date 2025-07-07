@@ -66,9 +66,9 @@
     button {
       display: block;
       margin: 0 auto;
+      margin-top: 4rem;
       background-color: #2b6cb0;
       color: white;
-      padding-top: 5rem;
       padding: 0.8rem 1.5rem;
       text-decoration: none;
       border-radius: 5px;
