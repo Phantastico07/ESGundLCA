@@ -63,8 +63,15 @@
     body a:link {
       color: #2b6cb0;        
     }
-
-
+    .button {
+      display: inline-block;
+      background-color: #2b6cb0;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
     /* Media Query für Smartphones */
     @media (max-width: 600px) {
       header {
