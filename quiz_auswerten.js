@@ -3,11 +3,18 @@ function auswerten() {
   let punkte = 0;
 
   // Map der richtigen Antworten
-  const richtigeAntworten = {
-    frage1: "B",
-    frage2: "C",
-    frage3: "A"
-  };
+ const richtigeAntworten = {
+  frage1: "B",
+  frage2: "C",
+  frage3: "A",
+  frage4: "B",
+  frage5: "C",
+  frage6: "B",
+  frage7: "B",
+  frage8: "A",
+  frage9: "B",
+  frage10: "B"
+};
 
   let alleBeantwortet = true;
 
@@ -29,9 +36,9 @@ function auswerten() {
 
     if (ausgewaehlt.value === richtige) {
       punkte++;
-      ausgewaehlt.parentElement.style.color = "green"; // ✅ Richtig grün
+      ausgewaehlt.parentElement.style.color = "green"; 
     } else {
-      ausgewaehlt.parentElement.style.color = "red";   // ❌ Falsch rot
+      ausgewaehlt.parentElement.style.color = "red";   
 
       // Richtige Antwort grün hervorheben
       const richtigeInput = document.querySelector(`input[name="${frage}"][value="${richtige}"]`);
