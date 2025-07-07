@@ -71,7 +71,7 @@
     }
     .button-block{
         margin-top: 4rem;
-        display: flex;
+        display: inline-block;
     }
     button {
       display: block;
