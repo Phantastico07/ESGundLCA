@@ -60,6 +60,7 @@
         display: flex;
         margin: 0 auto;
         text-align: center;
+        fontsize: 100px;
     }
     footer {
       background-color: #e2e8f0;
