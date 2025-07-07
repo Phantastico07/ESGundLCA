@@ -65,9 +65,10 @@
     }
     button {
       display: inline-block;
+      margin: 0 auto;
       background-color: #2b6cb0;
       color: white;
-      margin-top: 5rem;
+      padding-top: 5rem;
       padding: 0.8rem 1.5rem;
       text-decoration: none;
       border-radius: 5px;
