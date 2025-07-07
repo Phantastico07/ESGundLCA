@@ -67,10 +67,12 @@
       display: inline-block;
       background-color: #2b6cb0;
       color: white;
+      margin-top: 5rem;
       padding: 0.8rem 1.5rem;
       text-decoration: none;
       border-radius: 5px;
       font-size: 1rem;
+      align: center;
     }
     /* Media Query für Smartphones */
     @media (max-width: 600px) {
