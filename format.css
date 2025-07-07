@@ -55,6 +55,9 @@
       font-size: 2rem;
       margin-right: 0.5rem;
     }
+    .auswertung{
+        align: center;
+    }
     footer {
       background-color: #e2e8f0;
       text-align: center;
