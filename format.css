@@ -55,7 +55,7 @@
       font-size: 2rem;
       margin-right: 0.5rem;
     }
-    .auswertung {
+    #auswertung {
         display: flex;
         margin: 0 auto;
         text-align: center;
