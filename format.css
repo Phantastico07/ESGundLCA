@@ -64,7 +64,7 @@
       color: #2b6cb0;        
     }
     button {
-      display: inline-block;
+      display: block;
       margin: 0 auto;
       background-color: #2b6cb0;
       color: white;
