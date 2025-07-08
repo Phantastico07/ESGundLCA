@@ -71,8 +71,8 @@
       color: #2b6cb0;        
     }
     .button-block{
-        margin-top: 4rem;
-        display: inline-block;
+        margin-top: 4rem auto;
+        display: flex;
     }
     button {
       display: block;
