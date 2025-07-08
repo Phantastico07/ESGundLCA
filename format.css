@@ -68,8 +68,8 @@
       color: #2b6cb0;        
     }
     .button-block{
-        margin-top: 4rem auto;
-
+        margin-top: 4rem;
+        display: flex;
     }
     button {
       display: block;
