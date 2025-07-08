@@ -56,11 +56,8 @@
       margin-right: 0.5rem;
     }
     #auswertung {
-        width: 50%; 
-        display: flex;
-        margin: 0 auto;
-        text-align: center;
-        fontsize: 100px;
+      text-align: center;
+      margin: 1rem auto;
     }
     footer {
       background-color: #e2e8f0;
